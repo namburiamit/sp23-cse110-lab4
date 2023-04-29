@@ -65,35 +65,58 @@
 
 13. 
 - A: '32'
+  - ‘3’ + 2 
+  - It is 32 as + is a concat operator on strings and as 2 is not a string it will be converted to '2' and added to '3' which gives '32'.
 - B: 1
+  - ‘3’ - 2
+  - Since - is not a string operator, '3' is converted to 3 and is subtracted by 2 which gives output as 1.
 - C: 3
+  - 3 + null
+  - first operand/ 3 is an integer and hence null is converted to integer which will be 0. Hence 3+0 = 3.
 - D: 3null
+  - '3' + null
+  - Since '3' is a string, null is converted to a string and '3' concat 'null' would be '3null'.
 - E: 4
+  - true + 3
+    - Since 3 can't be a boolean true is converted to integer which is 1. Hence 1+3 = 4.
 - F: 0
-- G: 3undefined
+  - false + null
+  - Since a + operator is used, they are converted to integers and 0+0 = 0.
+- G: '3undefined'
+  - '3' + undefined
+  - Since + is  a string operator, undefined is converted to 'undefined' and is added to 3 which gives output as '3undefined'.
 - H: NaN
+  - '3' - undefined
+  - Since string does not
 
-14. 
+1.  
 - A: True
+  - '2' converts to 2 and 2>1 is True.
 - B: False
+  - '2' < '12' is false as '12' is lexicographically smaller.
 - C: True
+  - 2 == '2' as the integer values of both are same. ('2' is converted to 2) (== equality check)
 - D: False
+  - 2 === '2' is false as **===** does equality as well as type check. It's false as numeric value ≠ string value.
 - E: False
+  - True(1) ≠ 1. Hence, false.
 - F: True
+  - Boolean(2) = true
+  - Since both are boolean values and are equal, the condition is satisfied. Hence, it's true.
 
-15. 
+1.  
     * The **==** operator checks if the Left hand and Right hand values are equal without checking the type of the values.
 
     * The **===** operator checks if the Left hand and Right hand values are equal along with checking the type of both the values. Returns true iff both value and type are equal.
 
-16. Refer to **part2-question16.js**
+2.  Refer to **part2-question16.js**
 
-17. The output is an array [2, 4, 6]
+3.  The output is an array [2, 4, 6]
     * The _modifyArray_ function takes in an array and callback funciton as parameters and then while pushing elements to newArr, the callback funciton is used (in this case doSomething). 
     * 'doSomething' essentially takes in the element and doubles it. 
     * Hence while adding everytime, the element's value is doubled and [1, 2, 3] turns into [2, 4, 6]
     * Hence, the output is [2, 4, 6]
   
-18.  Refer to **part2-question18.js**
+4.   Refer to **part2-question18.js**
 
-19. The output is: 
+5.  The output is: 
