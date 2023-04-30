@@ -89,7 +89,7 @@
   - '3' - undefined
   - Since string does not
 
-1.  
+14.  
 - A: True
   - '2' converts to 2 and 2>1 is True.
 - B: False
@@ -104,19 +104,19 @@
   - Boolean(2) = true
   - Since both are boolean values and are equal, the condition is satisfied. Hence, it's true.
 
-1.  
+15.  
     * The **==** operator checks if the Left hand and Right hand values are equal without checking the type of the values.
 
     * The **===** operator checks if the Left hand and Right hand values are equal along with checking the type of both the values. Returns true iff both value and type are equal.
 
-2.  Refer to **part2-question16.js**
+16.  Refer to **part2-question16.js**
 
-3.  The output is an array [2, 4, 6]
+17.  The output is an array [2, 4, 6]
     * The _modifyArray_ function takes in an array and callback funciton as parameters and then while pushing elements to newArr, the callback funciton is used (in this case doSomething). 
     * 'doSomething' essentially takes in the element and doubles it. 
     * Hence while adding everytime, the element's value is doubled and [1, 2, 3] turns into [2, 4, 6]
     * Hence, the output is [2, 4, 6]
   
-4.   Refer to **part2-question18.js**
+18.   Refer to **part2-question18.js**
 
-5.  The output is: 
+19.  The output is: 1 4 3 2
